@@ -25,15 +25,15 @@ Neste ponto ao invés de copiar o conteúdo do dockerfile conforme o vídeo, opt
 De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:
 -
 Gosto do VSCode como editor, mas use o de sua preferência
--
 
+"
 public class HelloWorld {
     public static void main(String[] args)
     {
         System.out.println("Hello World");
     }
 }
-
+"
 No mesmo local de sua aplicação de exemplo, crie um arquivo com o nome "dockerfile" sem nenhuma extensão, com o seguinte conteúdo:
 
 FROM openjdk:7

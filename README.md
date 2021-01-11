@@ -1,8 +1,7 @@
 # Docker-OpenJDK-Iniciante-
 Ainda como iniciante, Estou sempre procurando um material de estudo e hoje foi a vez do Java
 
-Criando um Ambiente Docker usando OpenJDK
---------------------------------------------
+<h1>Criando um Ambiente Docker usando OpenJDK</h1>
 
 Olá, pessoal
 hoje resolvi compartilhar aqui o que estou aprendendo no meu dia-a-dia... vamos la´.
@@ -22,31 +21,38 @@ No vídeo o que vemos é um exemplo de HelloWord... que logo mais abaixo, veremo
 
 Neste ponto ao invés de copiar o conteúdo do dockerfile conforme o vídeo, optei por usar o exemplo diretamente do DockerHub para o OpenJDK, conforme o link: https://hub.docker.com/_/openjdk
 
-De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:
--
+<h2>De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:</h2>
+
 Gosto do VSCode como editor, mas use o de sua preferência
+<pre>
+    <code>
+        public class HelloWorld {
+            public static void main(String[] args)
+            {
+                System.out.println("Hello World");
+            }
+        }
+    </code>
+</pre>
 
-"
-public class HelloWorld {
-    public static void main(String[] args)
-    {
-        System.out.println("Hello World");
-    }
-}
-"
-No mesmo local de sua aplicação de exemplo, crie um arquivo com o nome "dockerfile" sem nenhuma extensão, com o seguinte conteúdo:
-
-FROM openjdk:7
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac http://HelloWord.java
-CMD ["java", "Main"]
+<h4>No mesmo local de sua aplicação de exemplo, crie um arquivo com o nome "dockerfile" sem nenhuma extensão, com o seguinte conteúdo:</h4>
+<pre>
+  <code>
+    FROM openjdk:7
+    COPY . /usr/src/myapp
+    WORKDIR /usr/src/myapp
+    RUN javac http://HelloWord.java
+    CMD ["java", "Main"]
+  </code>
+</pre>
 
 Você consegue executar e fazer o build da imagem, com os seguintes comandos:
-
+<pre>
+  <code>
 docker build -t my-java-app .
 $ docker run -it --rm --name my-running-app my-java-app
-
+  </code>
+</pre>
 O que gosto no Docker é isso, não precisar fazer configurações que ficarão acumuladas em meu equipamento mesmo quando não estiver usando! Isso é incrível :)
 
 No fim da execução da aplicação, a imagem continuará existindo conforme podemos ver pelo comando:

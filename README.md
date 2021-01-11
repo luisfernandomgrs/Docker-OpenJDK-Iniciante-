@@ -22,8 +22,10 @@ No vídeo o que vemos é um exemplo de HelloWord... que logo mais abaixo, veremo
 
 Neste ponto ao invés de copiar o conteúdo do dockerfile conforme o vídeo, optei por usar o exemplo diretamente do DockerHub para o OpenJDK, conforme o link: https://hub.docker.com/_/openjdk
 
-# De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:
-# Gosto do VSCode como editor, mas use o de sua preferência
+De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:
+-
+Gosto do VSCode como editor, mas use o de sua preferência
+-
 
 public class HelloWorld {
     public static void main(String[] args)

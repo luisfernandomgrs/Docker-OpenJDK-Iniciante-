@@ -56,11 +56,15 @@ $ docker run -it --rm --name my-running-app my-java-app
 O que gosto no Docker é isso, não precisar fazer configurações que ficarão acumuladas em meu equipamento mesmo quando não estiver usando! Isso é incrível :)
 
 No fim da execução da aplicação, a imagem continuará existindo conforme podemos ver pelo comando:
-
-docker images
-
+<pre>
+    <code>
+        docker images
+    </code>
+</pre>
 Se desejar remover todos os objetos do docker que não estão mais em uso, execute o comando:
-
-docker system prune
-
+<pre>
+    <code>
+        docker system prune
+    </code>
+</pre>
 Espero ter ajudado, :)

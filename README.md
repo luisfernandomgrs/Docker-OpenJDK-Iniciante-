@@ -1,5 +1,3 @@
-[Gosto-do-VSCode](Gosto-do-VSCode)
-
 # Docker-OpenJDK-Iniciante-
 Ainda como iniciante, Estou sempre procurando um material de estudo e hoje foi a vez do Java
 
@@ -26,6 +24,7 @@ Neste ponto ao invés de copiar o conteúdo do dockerfile conforme o vídeo, opt
 <h2>De forma simples, digite o código abaixo e salve com o nome "HelloWord.java", sem as aspas:</h2>
 
 Gosto do VSCode como editor, mas use o de sua preferência
+
 <pre>
     <code>
         public class HelloWorld {
@@ -50,10 +49,10 @@ Gosto do VSCode como editor, mas use o de sua preferência
 
 Você consegue executar e fazer o build da imagem, com os seguintes comandos:
 <pre>
-  <code>
-docker build -t my-java-app .
-$ docker run -it --rm --name my-running-app my-java-app
-  </code>
+    <code>
+        docker build -t my-java-app .
+        $ docker run -it --rm --name my-running-app my-java-app
+    </code>
 </pre>
 O que gosto no Docker é isso, não precisar fazer configurações que ficarão acumuladas em meu equipamento mesmo quando não estiver usando! Isso é incrível :)
 
